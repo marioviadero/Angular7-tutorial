@@ -1,6 +1,8 @@
-<h1 [ngClass]="{
-  'gris': h1Style,
-  'largo': !h1Style
-}">Prueba Angular</h1>
+<h1>Prueba Angular</h1>
 
-<button (click)="pruebaClick()">Pulsame!</button>
+<ul *ngIf="users"> 
+  <li *ngFor="let user of users.data">
+    <img [src]="user.avatar">
+    <p>{{user.first_name}}{{user.last_name}}</p>
+  </li>
+</ul>

@@ -14,9 +14,7 @@ export class HomeComponent implements OnInit {
 
   constructor(private servicio: ServicioService) { }
 
-  ngOnInit() {}
-
-  pruebaClick() {
+  ngOnInit() {
     this.h1Style = true;
     this.servicio.primerClick();
 
